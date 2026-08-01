@@ -1,1 +1,31 @@
 Brain Storming
+
+Twist
+
+Chess
+- player runs around dodging chess pieces that spawn and blow up in their attack
+	pattern
+
+Winning is easy
+- npc shoots basketball into hoop -> win, you try to prevent this for as long as
+	possible
+
+Erasing History
+Transformation
+War
+
+There is no end... ?
+- every animal is missing their tail
+- coop racing game where a car is made of two front ends connected together,
+	each end controlled by a player
+- endless survival mode
+- escaping a time loop
+
+Bugs
+Assessment
+Magic
+Non-Euclidean Space
+Sticky
+
+
+Jail
