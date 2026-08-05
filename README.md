@@ -1,8 +1,7 @@
 # windstriders-1-bit-jam-13
 
 
-```
-mermaid
+```mermaid
 classDiagram
     class UI {
         -Label score
