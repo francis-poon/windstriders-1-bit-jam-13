@@ -102,7 +102,6 @@ sequenceDiagram
 
     Note over A: _ready() and patience timer starts
 
-    alt Player places dish successfully 
         P->>D: click
         D->>D: _is_mouse_over() -> true
         D->>D: dragging = true
@@ -111,6 +110,7 @@ sequenceDiagram
         P->>D: right_click
         D->>D: _rotate() and _normalize_shape()
         P->>D: release
+    alt Placement valid
         activate D
         D->>D: _attempt_place()
         D->>T: can_place(dish, global_pos)
@@ -144,8 +144,7 @@ sequenceDiagram
         Note over Q: move animals forward? idk
         deactivate Q
 
-    else Placement invalid, dish returns
-        P->>D: release
+    else Placement invalid
         activate D
         D->>D: _attempt_place()
         D->>T: can_place(dish, global_pos)
