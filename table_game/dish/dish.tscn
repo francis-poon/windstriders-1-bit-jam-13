@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://duj2kvjl37lxl"]
+
+[ext_resource type="Script" uid="uid://b4hwu50h1in76" path="res://table_game/dish/dish.gd" id="1_5bv4s"]
+
+[node name="Dish" type="Control" unique_id=931881886]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5bv4s")
+
+[node name="TableGridColliderContainer" type="Control" parent="." unique_id=1601289149]
+anchors_preset = 0

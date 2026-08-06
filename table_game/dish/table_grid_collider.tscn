@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://27hhco4r5iak"]
+
+[ext_resource type="Script" uid="uid://b7cv17kdxmgb3" path="res://table_game/dish/table_grid_collider.gd" id="1_ampex"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0loff"]
+
+[node name="TableGridCollider" type="Control" unique_id=2070688426]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ampex")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=458959294]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=87186942]
+shape = SubResource("RectangleShape2D_0loff")

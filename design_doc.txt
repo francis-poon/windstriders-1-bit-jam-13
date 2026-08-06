@@ -1,3 +1,38 @@
+Dish
+has a collection of TableGridCollider
+get_drop_data will return a DishDropData
+DishDropDAta contains a boolean based on if all the TableGridColliders in Dish are true
+and the Dish itself
+
+TableGridCollider
+	vars
+	- is_colliding
+	has
+	- Area2D
+	listeners
+	- _on_area2d_body_entered
+	- _on_area2d_body_exited
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Brain Storming
 
 Twist

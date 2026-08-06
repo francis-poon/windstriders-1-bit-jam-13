@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://debdkkvbmcx21"]
+
+[ext_resource type="Texture2D" uid="uid://cqduegt10vuin" path="res://icon.svg" id="1_f5hgb"]
+[ext_resource type="Script" uid="uid://361515y8powa" path="res://sandbox/control_camera/sprite_2d.gd" id="2_ymnit"]
+
+[node name="Main" type="Control" unique_id=1862976096]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="." unique_id=29319276]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer" unique_id=2017997644]
+handle_input_locally = false
+size = Vector2i(1152, 648)
+render_target_update_mode = 0
+
+[node name="Node2D" type="Node2D" parent="SubViewportContainer/SubViewport" unique_id=301466767]
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1579912259]
+texture = ExtResource("1_f5hgb")
+script = ExtResource("2_ymnit")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport/Node2D/Sprite2D" unique_id=1378939180]
+
+[node name="Sprite2D2" type="Sprite2D" parent="SubViewportContainer/SubViewport/Node2D" unique_id=1937772755]
+modulate = Color(0.27388972, 0.22943059, 0.11216103, 1)
+texture = ExtResource("1_f5hgb")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=36162933]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

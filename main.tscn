@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://cye7hx4xxyw7f"]
+
+[ext_resource type="Script" uid="uid://c10rr5wldlm1v" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://64oj7k25qr51" path="res://table_game/table_game_screen.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Node2D" unique_id=663792909]
+script = ExtResource("1_ig7tw")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1618544960]
+visible = false
+
+[node name="StartScreen" type="Control" parent="CanvasLayer" unique_id=1780575532]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="CanvasLayer/StartScreen" unique_id=2113931720]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/StartScreen" unique_id=146353468]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StartButton" type="Button" parent="CanvasLayer/StartScreen/VBoxContainer" unique_id=953493705]
+layout_mode = 2
+text = "Start"
+
+[node name="HowToPlayButton" type="Button" parent="CanvasLayer/StartScreen/VBoxContainer" unique_id=1459433623]
+layout_mode = 2
+text = "How To Play"
+
+[node name="CreditsButton" type="Button" parent="CanvasLayer/StartScreen/VBoxContainer" unique_id=1971654627]
+layout_mode = 2
+text = "Credits"
+
+[node name="TableGameScreen" parent="CanvasLayer" unique_id=449918150 instance=ExtResource("2_0xm2m")]
+
+[node name="HighScoreInputScreen" type="Control" parent="CanvasLayer" unique_id=1121019070]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0

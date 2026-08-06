@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://cegylht0gw0ff"]
+
+[ext_resource type="Script" uid="uid://svp6omx67hyi" path="res://sandbox/drag_drop_node2d/drop_destination.gd" id="1_l0rq2"]
+[ext_resource type="Script" uid="uid://c11gfh52mj27c" path="res://sandbox/drag_drop_node2d/draggable.gd" id="2_18h8t"]
+[ext_resource type="Script" uid="uid://8w1akc7sfink" path="res://sandbox/drag_drop_node2d/camera_2d.gd" id="3_l26ty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4bec4"]
+
+[node name="DragDropNode2d" type="Node2D" unique_id=984868293]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1715514292]
+
+[node name="ColorRect" type="ColorRect" parent="Node2D" unique_id=1175126737]
+offset_left = -50.0
+offset_top = -50.0
+offset_right = 50.0
+offset_bottom = 50.0
+script = ExtResource("1_l0rq2")
+
+[node name="Area2D" type="Area2D" parent="Node2D" unique_id=467026355]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" unique_id=1548159986]
+shape = SubResource("RectangleShape2D_4bec4")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=345185100]
+
+[node name="Spawn" type="Control" parent="CanvasLayer" unique_id=666460320]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 3
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/Spawn" unique_id=1645845139]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Draggable" type="ColorRect" parent="CanvasLayer/Spawn" unique_id=1539033086]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("2_18h8t")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=357350489]
+script = ExtResource("3_l26ty")
